@@ -6,9 +6,9 @@ jobs:
     build:
         strategy:
             matrix:
-                os: [ubuntu-latest, macos-latest, windows-latest]
+                OS: [ubuntu-latest, macos-latest, windows-latest]
                 python-version: [3.9, '3.10', 3.11, 3.12]
-        runs-on: ${{ matrix.os }}
+        runs-on: ${{ matrix.OS }}
         steps:
         - name: Setup Python
           uses: actions/setup-python@v4
